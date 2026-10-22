@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two truths and a lie</title>
+</head>
+<body style="background-color: rgb(241, 221, 255);">
+    <h1>Orla's Truth and Lie game</h1>
+    <hr>
+
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First name</label><br />
+        <input type="text" name="fname" id="fname"><br />
+        <label for="lname">Last name</label><br />
+        <input type="text" name="lname" id="lname"><br />
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age"><br />
+    </form><br />
+
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <p id="greet" style="font-size: x-large;">Welcome</p>
+        
+
+        <h2>Warm up trivia question</h2>
+        <p>What is the only food that cannot go bad?</p>
+        <p id="trivia1-answer"></p>
+        <form action="">
+            <input type="radio" name="trivia1" id="chocolate">
+            <label for="chocolate">Dark chocolate</label><br />
+            <input type="radio" name="trivia1" id="tuna">
+            <label for="tuna">Tuna</label><br />
+            <input type="radio" name="trivia1" id="honey">
+            <label for="honey">Honey</label><br />
+
+        </form>
+
+        <input type="button" value="SUBMIT" onclick="trivia1();">
+<p>Two truths and a lie</p>
+<p id="twotruths"></p>
+  <form action="">
+            <input type="radio" name="onelie" id="brother">
+            <label for="brother">I have a brother</label><br />
+            <input type="radio" name="onelie" id="cat">
+            <label for="cat">I have three cats</label><br />
+            <input type="radio" name="onelie" id="sister">
+            <label for="sister">I have a sister</label><br />
+       
+        </form>
+         <input type="button" value="SUBMIT" onclick="onelie();">
+
+         <p>Do you want to play again</p>
+<p id="twotruths2"></p>
+  <form action="">
+            <input type="radio" name="onelie2" id="purple">
+            <label for="purple">My favorite color is purple</label><br />
+            <input type="radio" name="onelie2" id="tate">
+            <label for="tate">My favorite singer in Tate McRae.</label><br />
+            <input type="radio" name="onelie2" id="burger">
+            <label for="burger">My favorite food is burgers</label><br />
+       
+        </form>
+         <input type="button" value="SUBMIT" onclick="onelie2();">
+
+    <script src="javascript/truth.js"></script>     
+</body>
+</html>
